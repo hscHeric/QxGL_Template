@@ -1,0 +1,62 @@
+---
+Checks: >
+  -*,
+  clang-analyzer-*,
+  bugprone-*,
+  cppcoreguidelines-*,
+  modernize-*,
+  readability-*,
+  portability-*,
+  performance-*,
+  modernize-use-auto,
+  modernize-use-nullptr,
+  modernize-use-equals-default,
+  modernize-use-equals-delete,
+  modernize-use-override,
+  modernize-use-using,
+  modernize-use-smart-pointers,
+  modernize-loop-convert,
+  modernize-use-nodiscard,
+  -performance-*,
+  -cppcoreguidelines-pro-bounds-*,
+  -cppcoreguidelines-avoid-magic-numbers,
+  -readability-magic-numbers,
+  -readability-identifier-length,
+  -modernize-use-trailing-return-type,
+  -*-avoid-c-arrays,
+  -performance-no-int-to-ptr
+
+HeaderFilterRegex: '^(include/|src/|examples/)'
+
+CheckOptions:
+  - key:             Checks.C++Standard
+    value:           'c++20'
+  - key:             modernize-make-unique.MakeUniqueFunction
+    value:           'std::make_unique'
+  - key:             modernize-use-override.OverrideSpelling
+    value:           'override'
+  - key:             modernize-use-override.FinalSpelling
+    value:           'final'
+  - key:             readability-identifier-naming.ClassCase
+    value:           'CamelCase'
+  - key:             readability-identifier-naming.StructCase
+    value:           'CamelCase'
+  - key:             readability-identifier-naming.EnumCase
+    value:           'CamelCase'
+  - key:             readability-identifier-naming.FunctionCase
+    value:           'camelCase'
+  - key:             readability-identifier-naming.VariableCase
+    value:           'snake_case'
+  - key:             readability-identifier-naming.MemberCase
+    value:           'snake_case'
+  - key:             readability-identifier-naming.ConstantCase
+    value:           'UPPER_CASE'
+  - key:             readability-identifier-naming.EnumConstantCase
+    value:           'CamelCase'
+  - key:             readability-identifier-naming.NamespaceCase
+    value:           'snake_case'
+  - key:             readability-identifier-naming.IgnoreShortVariableNames
+    value:           '1'
+
+WarningsAsErrors: ''
+---
