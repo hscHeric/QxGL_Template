@@ -5,8 +5,8 @@
 <h2>Como Baixar o Template</h2>
 <p>Siga os passos abaixo para clonar o repositório com os submódulos:</p>
 
-<h3>Passo 1: Clone o Repositório</h3>
-<p>Primeiro, clone o repositório usando o comando abaixo:</p>
+<h3>Passo 1: Clone o Repositório do template</h3>
+<p>Primeiro, clone o repositório usando o comando abaixo (Observe que você deve alterar a url para a url do seu projeto):</p>
 <pre><code>git clone --recursive https://github.com/hscHeric/QxGL_Template.git</code></pre>
 <p>A opção <code>--recursive</code> é importante para garantir que todos os submódulos sejam clonados juntamente com o repositório principal.</p>
 
