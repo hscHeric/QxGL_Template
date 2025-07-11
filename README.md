@@ -10,11 +10,7 @@
 <pre><code>git clone --recursive https://github.com/hscHeric/QxGL_Template.git</code></pre>
 <p>A opção <code>--recursive</code> é importante para garantir que todos os submódulos sejam clonados juntamente com o repositório principal.</p>
 
-<h3>Passo 2: Atualize os Submódulos (Caso Não Use o <code>--recursive</code>)</h3>
-<p>Se você esqueceu de usar a opção <code>--recursive</code>, pode atualizar os submódulos manualmente com o seguinte comando dentro do diretório do repositório clonado:</p>
-<pre><code>git submodule update --init --recursive</code></pre>
-
-<h3>Passo 3: Dependências</h3>
+<h3>Passo 2: Dependências</h3>
 <p>Este projeto requer as seguintes dependências:</p>
 <ul>
   <li><strong>GLU</strong>: Biblioteca utilitária para OpenGL</li>
@@ -24,7 +20,7 @@
   <li><strong>CMake</strong>: O CMake deve estar instalado para configurar e compilar o projeto.</li>
 </ul>
 
-<h3>Passo 4: Compilando o Projeto</h3>
+<h3>Passo 3: Compilando o Projeto</h3>
 <p>Após clonar o repositório e inicializar os submódulos, você pode compilar o projeto com CMake. Execute os seguintes comandos:</p>
 
 <ol>
